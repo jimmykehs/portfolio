@@ -1,13 +1,331 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Ubuntu";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#navbar {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1ea896;
+  padding: 20px 15px;
+  color: #fff;
 }
+
+#navbar .nav-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#navbar .nav-options a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+#navbar .nav-options a:hover {
+  color: #cfcfcf;
+}
+
+#hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 250px;
+}
+
+#hero img {
+  height: 400px;
+  width: 400px;
+  border-radius: 100%;
+  background-color: #1ea896;
+}
+
+#hero .intro {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+}
+
+#hero .intro h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#hero .intro p {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+#skills {
+  padding: 50px 250px;
+}
+
+#skills #all-skills {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#skills .skill-card {
+  height: 215px;
+  width: 175px;
+  background-color: #efefef;
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+#skills .skill-card p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#projects {
+  padding: 50px 250px;
+}
+
+#projects #all-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#projects #all-projects .project-card {
+  margin: 50px 0;
+}
+
+#projects #all-projects .project-card .project-links {
+  margin: 10px 0;
+}
+
+#projects #all-projects .project-card .project-img-details-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#projects #all-projects .project-card .project-img-details-container img {
+  height: 550px;
+  width: 750px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+#projects #all-projects .project-card .project-img-details-container a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+#projects #all-projects .project-card .project-img-details-container a:hover {
+  text-decoration: underline;
+}
+
+#projects #all-projects .project-card .project-img-details-container .project-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 25px;
+  font-weight: 300;
+}
+
+#projects #all-projects .project-card .project-img-details-container .project-details p {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 5px 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#projects #all-projects .project-card .project-img-details-container .project-details .project-desc {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+#projects #all-projects .project-card .project-img-details-container .project-details .project-desc ul {
+  margin-top: 25px;
+  list-style: none;
+}
+
+#projects #all-projects .project-card .project-img-details-container .project-details .project-stack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#projects #all-projects .project-card .project-img-details-container .project-details .project-stack .tech-stack-p {
+  padding: 5px 10px;
+  background-color: #eee;
+  margin: 5px;
+  border-radius: 5px;
+  font-weight: 400;
+  text-align: center;
+  width: 125px;
+  max-width: 125px;
+}
+
+#projects #all-projects .project-card .project-img-details-container .project-details .project-stack .HTML {
+  background-color: #ef652a;
+  color: #fff;
+}
+
+#projects #all-projects .project-card .project-img-details-container .project-details .project-stack .CSS {
+  background-color: #1572b6;
+  color: #fff;
+}
+
+#projects #all-projects .project-card .project-img-details-container .project-details .project-stack .JavaScript {
+  background-color: #f0db4f;
+  color: #141414;
+}
+
+#projects #all-projects .project-card .project-img-details-container .project-details .project-stack .NodeJS {
+  background-color: #83cd29;
+  color: #fff;
+}
+
+#projects #all-projects .project-card .project-img-details-container .project-details .project-stack .React {
+  background-color: #61dafb;
+}
+
+#projects #all-projects .project-card .project-img-details-container .project-details .project-stack .PSQL {
+  background-color: #336791;
+  color: #fff;
+}
+
+#projects #all-projects .project-card .project-img-details-container .project-details .project-stack .Sass {
+  background-color: #cd6799;
+  color: #fff;
+}
+
+#projects #all-projects .project-card .project-img-details-container .project-details .project-stack .APIs {
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+#contact {
+  padding: 50px 250px;
+  background-color: #1ea896;
+}
+
+#contact h2 {
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+#contact .contact-methods-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact .contact-methods-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+}
+
+#contact .contact-methods-container form input,
+#contact .contact-methods-container form textarea {
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+#contact .contact-methods-container .contact-links-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+}
+
+#contact .contact-methods-container .contact-links-container .contact-method {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .contact-methods-container .contact-links-container .contact-method img {
+  height: 50px;
+  width: 50px;
+}
+
+#contact .contact-methods-container .contact-links-container .contact-method p {
+  margin-left: 10px;
+  color: #fff;
+}
+
+#contact .contact-methods-container .contact-links-container .contact-method p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.css.map */

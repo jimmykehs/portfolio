@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu";
+}
+
+#navbar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1ea896;
+  padding: 20px 15px;
+  color: #fff;
+
+  .nav-options {
+    display: flex;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 15px;
+      font-size: 18px;
+
+      &:hover {
+        color: rgb(207, 207, 207);
+      }
+    }
+  }
+}
+
+#hero {
+  display: flex;
+  padding: 50px 250px;
+  img {
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    background-color: #1ea896;
+  }
+
+  .intro {
+    flex-grow: 1;
+    text-align: center;
+
+    h2 {
+      font-weight: 700;
+      font-size: 30px;
+      margin-bottom: 20px;
+      transition: all 0.5s ease;
+    }
+    p {
+      font-weight: 300;
+      font-size: 20px;
+    }
+  }
+}
+
+#skills {
+  padding: 50px 250px;
+
+  #all-skills {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skill-card {
+    height: 215px;
+    width: 175px;
+    background-color: #efefef;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+    img {
+      //   width: 150px;
+      //   height: 150px;
+    }
+
+    p {
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+}
+
+#projects {
+  padding: 50px 250px;
+
+  #all-projects {
+    display: flex;
+    flex-direction: column;
+
+    .project-card {
+      margin: 50px 0;
+      .project-links {
+        margin: 10px 0;
+      }
+
+      .project-img-details-container {
+        display: flex;
+        img {
+          height: 550px;
+          width: 750px;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+
+        a {
+          text-decoration: none;
+          color: #000;
+          font-weight: 400;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        .project-details {
+          display: flex;
+          flex-direction: column;
+
+          padding: 0 25px;
+          font-weight: 300;
+
+          p {
+            font-size: 18px;
+            font-weight: 300;
+            margin: 5px 0;
+            flex-grow: 1;
+          }
+
+          .project-desc {
+            flex-grow: 1;
+            ul {
+              margin-top: 25px;
+              list-style: none;
+            }
+          }
+
+          .project-stack {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .tech-stack-p {
+              padding: 5px 10px;
+              background-color: #eee;
+              margin: 5px;
+              border-radius: 5px;
+              font-weight: 400;
+              text-align: center;
+              width: 125px;
+              max-width: 125px;
+            }
+
+            .HTML {
+              background-color: #ef652a;
+              color: #fff;
+            }
+            .CSS {
+              background-color: #1572b6;
+              color: #fff;
+            }
+            .JavaScript {
+              background-color: #f0db4f;
+              color: rgb(20, 20, 20);
+            }
+            .NodeJS {
+              background-color: #83cd29;
+              color: #fff;
+            }
+            .React {
+              background-color: #61dafb;
+            }
+            .PSQL {
+              background-color: #336791;
+              color: #fff;
+            }
+            .Sass {
+              background-color: #cd6799;
+              color: #fff;
+            }
+            .APIs {
+              background-color: rgb(46, 46, 46);
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#contact {
+  padding: 50px 250px;
+
+  h2 {
+    color: #fff;
+    margin-bottom: 25px;
+  }
+  background-color: #1ea896;
+
+  .contact-methods-container {
+    display: flex;
+    flex-direction: column;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+
+      input,
+      textarea {
+        margin: 5px 0;
+        padding: 5px;
+        border: 1px solid #eee;
+        border-radius: 5px;
+      }
+    }
+
+    .contact-links-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 25%;
+      .contact-method {
+        display: flex;
+        align-items: center;
+
+        img {
+          height: 50px;
+          width: 50px;
+        }
+
+        p {
+          margin-left: 10px;
+          color: #fff;
+
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
